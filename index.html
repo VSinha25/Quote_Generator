@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Quote Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/a9e0e8c66e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <i class="fa-solid fa-ghost"></i>
-    <h1>Hello World</h1>
+    <div class="quote-cont" id="quote-cont">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+            <!-- Author -->
+            <div class="quote-author">
+                <span id="author"></span>
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="twitter-butt" id="twitter" title="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="new-quote">New Quote</button>
+            </div>
+        
+    </div>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
